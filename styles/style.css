@@ -1,0 +1,299 @@
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Mukta:wght@800&display=swap');
+
+/* FORMAT */
+
+/* sayfanın düzgün bir şekilde açılmasını sağlıyor */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth; /* scrool yumuşak geçiş */ 
+}
+
+/* HEADER START */
+header{
+    background-color: rgba(34, 34, 34, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    border-bottom: 2px solid #fff;
+} 
+
+.navbar{
+    display: flex;  /* LOGO VE MENULER YAN YANA GELDİ */
+    align-items: center; /* DİKEYDE ORTALA */
+    width: 80%;
+    margin: 2px auto; /* ALT VE ÜST 2PX - SAĞ VE SOL OTOMATİK */ 
+    padding: 10px 0;  /* İÇ BOŞLUK * 10PX ALT ÜST - SAĞ SOL OTOMATİK */
+    justify-content: space-between; /* LOGO VE LİNKLERİ SAYFANIN İKİ TARAFINA AYIRDI */
+}
+
+.navlink{
+    display: flex; /* LİNKLER YAN YANA GELDİ*/
+}
+
+.navlink li a{
+    color: #fff;
+    margin-left: 15px; /* LİNKLERİN SOLUNDAN 15 PX BOŞLUK BIRAKTIK */
+    padding: 5px 15px;
+    border-radius: 5px; /* KENARLARI KIVRIK ARKA PLAN VERDİK */
+   transition: all .5s ease-in-out; /* HOVER EFEKTİ */
+
+}
+
+.navlink li a:hover{
+    background-color: #24CAAC;
+
+}
+
+.logo h2 a{
+    color: #fff;
+    text-transform: uppercase; /* TÜM HARFLER BÜYÜK OLDU */ 
+}
+/* HEADER END */
+
+
+/* SECTION */
+
+section{
+    padding: 100px 0;
+    background-color: #122e44;
+
+}
+
+img{
+    width: 100%;
+}
+
+
+/* HOME SECTION START  */
+.home{ 
+    display: flex; /* YAZI VE ADAM RESMİ YAN YANA GELDİ */
+    align-items: center;  /* DİKEYDE HİZALI */
+    justify-content: space-between;
+    margin: 0 auto; /* ÜST VE ALT BOŞLUKLAR 0 - SAĞ VE SOLU KENDİSİ AYARLAYACAK */
+    width: 80%;  /* YÜZDE 80 BÜYÜKLÜK KULLAN */
+    color: #fff;
+
+}
+
+.home_child{
+    flex-basis: 45%; /* BİR KONTEYNERDE NE KADAR YER KAPLAYACAĞINI BELİRLİYORUZ */
+}
+
+.home_child h1{
+    color: #24CAAC;
+    font-size: 50px;
+    
+}
+
+
+.span{
+    color: #DF376E;
+
+}
+
+
+.home_child p{
+    font-size: 25px;
+    margin-bottom: 12px;
+
+}
+
+.btn{
+    background-color: #24CAAC;
+    padding: 12px 40px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: large;
+    border: 1px solid #fff;
+
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: transparent;
+    letter-spacing: 1px;
+}
+
+/* HOME SECTION END  */
+
+/* SOFTWARE SECTION START  */
+
+.section_title{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 50px;
+    transition: .5s all ease-in-out;
+    position: relative;
+}
+
+.section_title:hover{
+    background-color: #24CAAC;
+}
+
+.software{
+    display: flex; /* YAZILAR YAN YANA GELDİ */
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between; /* birbirlerinden ayrı dursunlar diye */
+}
+
+.software_child{
+    color: #fff;
+    background-color: #01101a;
+    flex-basis: 30%; /* ALANI HEPSİ İÇİN %30 OLARAK KULLANDIK */
+    padding: 25px 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all .5s ease-in-out;
+
+}
+
+.software_child:hover{
+
+    border: 1px solid #24CAAC;
+}
+
+.software_child .icon{
+    color: #24CAAC;
+    font-size: 25px;
+}
+
+.software_child h3{
+    font-size: 20px;
+}
+   
+/* SOFTWARE SECTION END */
+
+
+/* CERTIFICATES SECTION START */
+
+.certificates{
+    display: flex;
+    flex-wrap: wrap; /* DİV İÇİNDE NASIL DAVRANACAĞINI SEÇİYOR. BÜYÜDÜĞÜ ZAMAN AŞAĞI İNSİN DİYE */
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.certificates_child{
+    flex-basis: 24%;
+    color: #fff;
+    padding: 20px 10px;
+    border: 1px solid transparent;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+
+}
+
+.certificates_child:hover{
+    border: 1px solid #24CAAC;
+}
+
+.certificates_child .detail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.certificates_child .detail ul{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+
+}
+
+.certificates_child .detail ul li{
+    color: gold;
+
+}
+
+
+/* CERTIFICATES SECTION END */
+
+
+/* SECCESS SECTION START */
+.success{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.success_child{
+    flex-basis: 40%;
+
+}
+
+.success_child img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.success_child2{
+    flex-basis: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.single_detail{
+    flex-basis: 40%;
+    padding: 40px 30px;
+    color: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;   
+
+}
+
+.single_detail:hover{
+    transform: scale(1.05);  /* MOUSE İLE ÜZERİNE GELİNCE BÜYÜYOR */
+
+}
+
+.sd_1{
+    background-color: #eaa022;
+    margin-bottom: 20px;
+}
+
+.sd_2{
+    background-color: #e91e62;
+    margin-bottom: 20px;
+}
+
+.sd_3{
+    background-color: #24CAAC;
+    margin-bottom: 20px;
+}
+
+.sd_4{
+    background-color: #2e363e;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* SECCESS SECTION END */
